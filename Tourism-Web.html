@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0    ">
+	<title> TOURISM WEBSITE </title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</head>
+<style>
+
+.section{
+	padding: 0;
+	margin: 0;
+}
+.header
+{
+	height: 100%;
+	background-image: url(https://media.istockphoto.com/id/498628231/photo/lake-of-blue-water.webp?b=1&s=170667a&w=0&k=20&c=4B7-65gJqotb_nZnTk2FQdkqJtSDq1FhVPXR_jzzi_Q=);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	padding-top: 20px;
+	text-align: center;
+}
+.header img
+{
+  width: 180px;
+  float: left;
+}
+.Login
+{
+	width: 100px;
+	padding: 20px;
+	outline: none !important;
+	border: 5px solid black;
+	border-radius: 50px;
+	background-color: orange;
+	color:black;
+	float: right;
+}
+.header h1
+{
+	padding-top: 200px;
+	padding-bottom: 0px;
+	font-size: 55px;
+}
+.header p
+{
+  margin: 18px 0px;
+}
+.input-group
+{
+	width: 90% !important;
+	max-width:500px;
+	border-radius: 30px;
+	background: palevioletred;
+	margin: auto;
+	padding: 2px;
+}
+.form-control
+{
+	border: 0 !important;
+	border-radius: 30px !important;
+	margin: 2px;
+	box-shadow: none !important;
+}
+
+.input-group-text-button
+{
+	width: 100px;
+	background-color:forestgreen;
+	border: 5px !important;
+	color: black !important;
+	padding: 10px 20px !important;
+	padding-top: 10px !important;
+	border-radius: 20px !important;
+	box-shadow: none;
+}
+/*features*/
+
+.features
+{
+	padding: 50px 0;
+}
+h1
+{
+	text-align: center;
+	padding-bottom: 30px;
+}
+.feature-img img
+{
+  width: 100%;
+}
+.price
+{
+	width: 50px;
+	height: 50px;
+	background: red;
+	color: white;
+	font-weight: 600;
+	border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 0 10px 1px rgba(37, 73, 214, 0.18);
+  position: absolute;
+  left: 20px;
+  bottom: -50px;
+}
+.feature-img
+{
+	position: relative;
+}
+.rating
+{
+  padding: 3px;
+  float: right;
+  background: white;
+  bottom: -1px;
+  right: 0;
+  position: absolute;
+}
+.features .fa
+{
+	font-size: 15px;
+	color: brown;
+}
+.feature-details
+{
+	padding: 20px;
+	text-align: justify;
+}
+.feature-details h4
+{
+	font-weight: 600;
+	margin-top: 20px;
+}
+.feature-details .fa
+{
+  margin-right: 5px;
+}
+.feature-box
+{
+	box-shadow: 0 0 10px 1px rgba(37, 73, 214, 0.18);
+	margin-bottom: 20px;
+}
+.gallery
+{
+	padding: 50px 0;
+	background-color: grey;
+}
+.gallery-box img
+{
+	width: 100%;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: 1s;
+}
+.gallery-box img:hover
+{
+	transform: scale(1.1);
+}
+.gallery-box h4
+{
+	display: block;
+	color: white;
+	text-shadow: -2px 2px 2px gray;
+	font-weight: 600;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.gallery-box
+{
+	position: relative;
+	margin-bottom: 30px;
+}
+.banner
+{
+	height: 80%;
+	background-image: url(https://images.unsplash.com/file-1682622567683-99f3024cf76bimage?dpr=2&auto=format&fit=crop&w=416&q=60);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	padding-top: 14%;
+}
+.banner-highlights
+{
+	padding: 70px 0;
+	background: rgba(0, 0, 0, 0.7);
+	text-align: center;
+	color: white;
+}
+.booking-btn
+{
+	width: 120px;
+	padding: 8px;
+	outline: none !important;
+	border: 2px solid black;
+	border-radius: 50px;
+	background: transparent;
+	color:black;
+	background-color: forestgreen;
+	margin-top: 20px;
+}
+.users-feedback
+{
+	padding: 50px 0;
+}
+.user-review
+{
+	text-align: center;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 100, 0.2);
+	padding-bottom: 50px;
+}
+.user-review p
+{
+	padding: 50px 10px 10px 10px;
+}
+.users-feedback img
+{
+	 width: 60px;
+	 height: 60px;
+	 border-radius: 50%;
+	 position: relative;
+	 margin: -30px 0 20px 40%;
+}
+.footer
+{
+	padding: 100px 15px ;
+	background-image: linear-gradient(pink,whitesmoke);
+	color: black;	
+}
+.footer-logo
+{
+	width: 150px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.footer h4
+{
+	text-align: left;
+	margin-top: 15px;
+	margin-bottom: 25px;
+}
+.footer p
+{
+  font-size: 12px;
+  text-align: justify;
+  padding-right: 35px;
+}
+.footer .row .fa
+{
+  padding-right: 20px;
+  font-size: 15px;
+}
+.footer hr
+{
+	margin-top: 10px;
+	background: greenyellow;
+}
+.fa-heart
+{
+	margin: 0 5px;
+	color: orange;
+}
+.footer .copyright
+{
+	text-align: center;
+}
+</style>
+<body>
+
+	<section class="header">
+		<div class="container">
+			<img src="https://media.istockphoto.com/id/1182235539/photo/red-map-pointer-isolated-on-white-background.webp?b=1&s=170667a&w=0&k=20&c=ARWYj4aIX7jYhEWKWnV0JElPRStam7Whzo9YpjZ__fM=">
+			<button type="button" class="Login">Login</button>
+		</div>
+		<h1 style="color:rebeccapurple;">Travel Across The World </h1>
+		<p style="color:royalblue;">"Wishing you a trip that's full of joy, laughter, and beautiful memories. ...</p>
+		<div class="input-group">
+			<input type="text" class="form-control" placeholder="Search country ">
+			<div class="input-group-append">
+				<button type="submit" class="input-group-text-button">search</button>
+			</div>
+		</div>
+	</section>
+
+	<section class="features">
+		<h1 style="color:goldenrod;"><u>Features Destination</u></h1>
+		 <div class="container">
+		 	<div class="row">
+         <div class="col-md-4">
+		 		   <div class="feature-box">
+		 		   	<div class="feature-img">
+		 		   		<img src="https://media.istockphoto.com/id/1159951855/photo/medieval-architecture-at-gadi-sagar-lake-jaisalmer-rajasthan-india-at-sunrise.webp?b=1&s=170667a&w=0&k=20&c=LKe3XzZsvS_RDreDEeIUipJlE7TcC1eXA-jqWlXVRDs=">
+		 		   		 <div class="price">
+		 		   		  <p>60k</p>	
+		 		   		 </div>
+		 		   		 <div class="rating">
+		 		   		 	<i class="fa-solid fa-star"></i>
+		 		   		 	<i class="fa-solid fa-star"></i>
+		 		   		 	<i class="fa-solid fa-star"></i>
+		 		   		 	<i class="fa-solid fa-star-half-0"></i>
+		 		   		 	<i class="fa-solid fa-star-0"></i>
+		 		   		 </div>
+		 		   	</div>
+		 		   	<div class="feature-details">
+		 		   		<h4>Rajasthan</h4>
+		 		   		<p>"The Land Of Kings"</p>
+		 		   		<div>
+		 		   			<span><i class="fa-map-marker">Rajasthan</i></span>
+		 		   			<span><i class="fa-sun-0">4 days</i></span>
+		 		   			<span><i class="fa-moon-0">3 nights</i></span>
+		 		   		</div>
+		 		   	</div>
+		 		   </div>
+		 		 </div>
+
+		 		<div class="col-md-4">
+		 			<div class="feature-box">
+		 		   	<div class="feature-img">
+		 		   		<img src="https://media.istockphoto.com/id/1298956744/photo/house-boat-pleasure-cruise-ship-in-india-kerala-on-the-seaweed-covered-river-channels-of.jpg?s=612x612&w=0&k=20&c=rmtRSAY5wxen9opyim_gKG0OW5grbgeK7IV4DPCtAos=">
+		 		   		 <div class="price">
+		 		   		  <p>70k</p>	
+		 		   		 </div>
+		 		   		 <div class="rating">
+		 		   		 	<i class="fa-solid fa-star"></i>
+		 		   		 	<i class="fa-solid fa-star"></i>
+		 		   		 	<i class="fa-solid fa-star"></i>
+		 		   		 	<i class="fa-solid fa-star-half-0"></i>
+		 		   		 	<i class="fa-solid fa-star-0"></i>
+		 		   		 </div>
+		 		   	</div>
+		 		   	<div class="feature-details">
+		 		   		<h4>Kerala</h4>
+		 		   		<p>'God's Own Country'</p>
+		 		   		<div>
+		 		   			<span><i class="fa-map-marker">Kerala</i></span>
+		 		   			<span><i class="fa-sun-0">4 days</i></span>
+		 		   			<span><i class="fa-moon-0">3 nights</i></span>
+		 		   		</div>
+		 		   	</div>
+		 		</div>
+		 	</div>
+
+		 		<div class="col-md-4">
+           <div class="feature-box">
+		 		   	<div class="feature-img">
+		 		   		<img src="https://media.istockphoto.com/id/1335566189/photo/maldive-luxury-beach-chairs.webp?b=1&s=170667a&w=0&k=20&c=hf4ov09PngnNNyShEoCEFNGywg43Ah89C9cI4CN97vw=">
+		 		   		 <div class="price">
+		 		   		  <p>80k</p>	
+		 		   		 </div>
+		 		   		 <div class="rating">
+		 		   		 	<i class="fa-solid fa-star"></i>
+		 		   		 	<i class="fa-solid fa-star"></i>
+		 		   		 	<i class="fa-solid fa-star"></i>
+		 		   		 	<i class="fa-solid fa-star-half-0"></i>
+		 		   		 	<i class="fa-solid fa-star-0"></i>
+		 		   		 </div>
+		 		   	</div>
+		 		   	<div class="feature-details">
+		 		   		<h4>Maldives</h4>
+		 		   		<p> “Maldives – Always Natural”</p>
+		 		   		<div>
+		 		   			<span><i class="fa-map-marker">Maldives</i></span>
+		 		   			<span><i class="fa-sun-0">4 days</i></span>
+		 		   			<span><i class="fa-moon-0">3 nights</i></span>
+		 		   		</div>
+		 		   	</div>
+		 	</div>
+		 </div>
+   </section>
+
+  <section class="gallary">
+  	<h1 style="color:goldenrod;"><u>Travelling-Gallery</u></h1>
+  	<div class="container">
+  		<div class="row">
+
+  			<div class="col-md-4">
+  				<div class="gallery-box">
+  				<img src="https://media.istockphoto.com/id/1224021113/photo/indian-cameleers-camel-driver-with-camel-silhouettes-in-dunes-on-sunset-jaisalmer-rajasthan.webp?b=1&s=170667a&w=0&k=20&c=tbQHyU-nBmjXzDltzBkwERtNwR7u9X0pQAJedllsCDg=">
+  			</div>
+  		</div>
+
+  		<div class="col-md-4">
+  		<div class="gallery-box">
+  				<img src="https://media.istockphoto.com/id/472909442/photo/backwaters-of-kerala.webp?b=1&s=170667a&w=0&k=20&c=kTWXd_EJpENqaBfo6eMiLvbNatudIwi2wEeJHu4ipLM=">
+  			</div>
+  	</div>
+
+  	<div class="col-md-4">
+  	<div class="gallery-box">
+  				<img src="https://media.istockphoto.com/id/1360554439/photo/maldives-tropical-island.webp?b=1&s=170667a&w=0&k=20&c=AWY54kmUT9IcXJZdSdxxm5JUFK_3fxpmMbWQ6IhEG50=">
+  			</div>
+  		</div>
+  	</div>
+  </div>
+  	</section>
+
+  <section class="banner">
+  	<div class="banner-highlights">
+  		<div class="container">
+  			<div class="row">
+
+  				<div class="col-md-8">
+  					<h2>get 30% on top destinations</h2>
+  					<p>book your ticket before 31 Oct and avail 30% flat discount</p>
+  				</div>
+  				<div class="col-md-4">
+  					<button type="button" class="booking-btn">book now</button>
+  				</div>
+
+  			</div>
+  		</div>
+  	</div>
+  </section>
+
+  <section class="users-feedback">
+  	<h1 style="color:goldenrod;"><u>Users Review</u></h1>
+  	<div class="container">
+  		<div class="row">
+
+  			<div class="col-md-4">
+  				<div class="user-review">
+  					<p>The Golden City of Rajasthan is known for its desert life</p>
+  					<h5>Varun Bhome</h5>
+  					<small>Pune</small>
+  					</div>
+  					<img src="https://media.istockphoto.com/id/1155234248/photo/fitness-instructor-standing-at-a-fitness-centre-and-smiling-at-the-camera.webp?b=1&s=170667a&w=0&k=20&c=851I3_CDZLhmuLHEJofNBZAT4IiK6Kk9kR--WsM4qEo=">
+  				</div>
+
+  				<div class="col-md-4">
+  					<div class="user-review">
+  					<p>It is a perfect gateway for nature lovers</p>
+  					<h5>Saurbh Bankar</h5>
+  					<small>Kothrud</small>
+  					</div>
+  					<img src="https://media.istockphoto.com/id/958064228/photo/portrait-of-happy-young-man.webp?b=1&s=170667a&w=0&k=20&c=ywaPLXj8meNw8tmZ3rOju5nrtlmhMwrQnjpW4nlqy_s=">
+  				</div>
+
+  				<div class="col-md-4">
+  					<div class="user-review">
+  					<p>Maldives is a feast for all your senses!</p>
+  					<h5>siddharth nehere</h5>
+  					<small>Baner</small>
+  					</div>
+  					<img src="https://media.istockphoto.com/id/1399565382/photo/young-happy-mixed-race-businessman-standing-with-his-arms-crossed-working-alone-in-an-office.webp?b=1&s=170667a&w=0&k=20&c=ZAXJYLesh6gSd9huAgpy6rjpR4z-IFVH9MpxrKIXCrs=">
+  				</div>
+
+  			</div>
+  		</div>
+  	</section>
+
+  <section class="footer">
+  	<div class="container">
+  	<div class="row">
+
+  		<div class="col-md-3">
+  			<img src="https://img.freepik.com/free-vector/flat-travel-background_23-2148050086.jpg?size=626&ext=jpg&ga=GA1.1.1581538826.1693287851&semt=ais" style="width:250px"; height="200px";>
+  			<p>Enjoy Your Journey!</p>
+  		</div>
+
+  		<div class="col-md-3">
+  			<h4>Features</h4>
+  			<p>Deals and Offers</p>
+  			<p>Customer and Reviews</p>
+  			<p>Cancellation Policy</p>
+  		</div>
+
+  		<div class="col-md-3">
+  			<h4>Quick Contact</h4>
+  			<p><i class="fa-solid fa-phone-square"></i>+91 7350952766</p>
+  			<p><i class="fa-solid fa-envelope"></i>xyz@gmail.com</p>
+  			<p><i class="fa-solid fa-home"></i> pune</p>
+  		</div>
+
+  		<div class="col-md-3">
+  			<h4>Follow Us On</h4>
+  			<p><i class="fa-solid fa-facebook-official"></i>facebook</p>
+  			<p><i class="fa-solid fa-youtube-play"></i>youtube</p>
+  			<p><i class="fa-solid fa-twitter"></i>twitter</p>
+  		</div>
+
+  	</div><hr>	
+  	<p class="copyright">made with<i class="fa-solid fa-heart"></i>by Siddharth</p>
+  	</div>
+
+  </section>
+
+</body>
+</html>
